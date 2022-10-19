@@ -1,0 +1,18 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  background-color: #2196F3;
+  padding: 1px;
+}
+
+.gridItem {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+}
+
+.colored {
+  background-color: rgba(255, 255, 255, 1.0);
+}
+
