@@ -1,15 +1,22 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .gridContainer {
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(16, 1fr);
+  /*grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);*/
   background-color: #2196F3;
-  padding: 1px;
+  grid-gap: 1px 1px;
+  width: 500px;
+  height: 500px;
 }
 
 .gridItem {
   background-color: rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
+  width: auto;
+  height: auto;
 }
 
 .colored {

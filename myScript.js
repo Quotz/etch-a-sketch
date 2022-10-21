@@ -5,7 +5,6 @@ function makeGrid(x) {
 	let gridPlan = x*x;
 
 	for (let i = 0; i < gridPlan; i++) {
-
 		let div = document.createElement('div');
 		div.classList.add('gridItem');
 		div.addEventListener('mouseover', () => {
@@ -14,8 +13,9 @@ function makeGrid(x) {
 		});
 		let gridContainer = document.querySelector('.gridContainer');
 		gridContainer.appendChild(div);
-		console.log('grid item added');
-		
+		gridContainer.style.gridTemplateColumns = `repeat(${gridNumber}, 1fr)`;
+		gridContainer.style.gridTemplateRows = `repeat(${gridNumber}, 1fr)`;
+		console.log('added grid item');
 	}
 }
 
